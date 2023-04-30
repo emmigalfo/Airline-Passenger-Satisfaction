@@ -81,9 +81,15 @@ Top correlations as seen in the heat map:
 
 ![Categorical bar graph](./Photos/categorical-bar.png)
 
+We can see that there were more loyal customers than disloyal customers, more business travelers than personal travelers, and more business and eco seats than eco plus seats.
+
 #### Target- Training data
 
 ![target bar graph](./Photos/Target-bar.png)
+
+## Data Preparation
+
+
 
 
 
