@@ -105,7 +105,7 @@ __Test Results:__
 
 ![Confusion matrix](./Photos/model_1_confusion_matrix.png)
 
-The initial model returned a precision score of 87%. It is important that the dissatisfied customers are labeled correctly. The top two boxes on the table show all of the dissatisfied customers and are split based on whether the model predicted them correctly or not. The initial model correctly labeled 13,139 dissatisfied customers and mislabeled 1,434. 
+The initial model returned a precision score of 87%. It is important that the dissatisfied customers are labeled correctly. The top two boxes on the table show all of the dissatisfied customers and are split based on whether the model predicted them correctly or not. The initial model mislabeled 1,434 dissatisfied customers. 
 
 ### Final Model: XGBoost
 The final model used is an XGBoost Classifier. After a grid search, parameters were tuned to random_state=42, learning_rate=0.01, n_estimators=1000, max_depth=7. 
@@ -119,4 +119,6 @@ __Test Results:__
 
 The final model had a precision score of 97%! This is much better than the initial score. The final model only mislabelled 306 dissatisfied customers. 
 
+The final model looks good, next steps include pulling out the important features and making recommendations. 
 
+![Important features bar chart](./Photos/feature-importance.png)
