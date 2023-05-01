@@ -1,5 +1,5 @@
 # Airline Passenger Satisfaction
-Machine learning project predicting customer satisfaction in the aviation industry
+Machine learning project predicting customer satisfaction in the airline industry
 ![Happy passengers on a plane](./Photos/Happy-passengers.avif)
 **Author:** [Emmi Galfo](mailto:emmi.galfo@gmail.com)
 
