@@ -144,3 +144,44 @@ Personal travel was the second most important indicator of overall satisfaction.
 
 The third highest indicator of overall satisfaction was inflight WiFi service. Higher ratings of wifi service satisfaction tended to result in higher levels of overall satisfaction. 
 
+## Results and Conclusions
+
+***Results*** 
+* The final and best model was an XGBoost classifier. 
+* The model had a precision score of 97%
+* The model's predictions resulted in false negatives only 2% of the time. 
+* The top 3 features that had the most impact on predicting passenger satisfaction were the following:
+    * online boarding
+    * personal travel
+    * inflight wifi service
+
+* The 3 features that had the least impact on predicting passenger satisfaction were the following:
+    * gender
+    * departure delay
+    * food and drink
+
+***Insights and Recommendations***
+1. Online boarding streamlines the check-in and boarding process. It offers customers a convenient way to check-in, pay for bags, reserve seats, and obtain boarding passes. This is the number one feature that customers valued. Putting resources into online boarding to keep it state of the art may go a long way in terms of improving customer satisfaction. 
+2. There are two main reasons to travel, personal and business. When customers were traveling for personal reasons, they were more likely to be dissatisfied with the experience. This may stem from who is paying for the travel-- personal payees versus corporate payees. The action item is looking deeper into what factors contribute to their dissatisfaction. This is a good area to look at further. 
+3. The third most important feature in predicting satisfaction was the inflight wifi service. My recommendation is to put resources into exploring opportunities to optimize the WiFi service during flight. 
+
+***Limitations***
+* Data bias- dataset may not be representative of the general population.
+* Limited feature set- There may be important features not accounted for such as weather. 
+* Changes in data distribution- if customer preferences or behaviors change over time, the model may need to be updated to reflect these changes.
+
+***Next Steps***
+* Explore which features are most important to personal travelers.
+* Expand the data set to include more airlines and/or more features.
+
+***
+Thank You!
+emmi.galfo@gmail.com
+***
+
+## Repository structure: 
+├── AirlineDataSet : data used in project \
+├── Photos : images used in readme, presentation, and notebook \
+├── Airline_Passenger_Satisfaction.ipynb : jupyter notebook used to create project \
+├── README.md : project summary and conclusions \
+├── presentation.pdf : stakeholder powerpoint slides 
