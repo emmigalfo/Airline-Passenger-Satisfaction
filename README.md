@@ -87,9 +87,20 @@ We can see that there were more loyal customers than disloyal customers, more bu
 
 ![target bar graph](./Photos/Target-bar.png)
 
-## Data Preparation
+We can see from the graph above that there are fairly equal amounts of satisfied and neutral/dissatisfied customers. 
 
+## Modeling
 
+### Model 1: Logistic Regression 
 
+Lets start with simple logistic regression classifier.
+
+__Results:__
+* precision score: 0.8705887794274085
+* recall score: 0.8361132704053303
+* accuracy score: 0.8751251154912226
+* f1 score: 0.8530028209863255
+
+![Confusion matrix](./Photos/model_1_confusion_matrix.png)
 
 
