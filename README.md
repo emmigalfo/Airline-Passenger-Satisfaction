@@ -122,3 +122,25 @@ The final model had a precision score of 97%! This is much better than the initi
 The final model looks good, next steps include pulling out the important features and making recommendations. 
 
 ![Important features bar chart](./Photos/feature-importance.png)
+
+When looking at the top important features, all that can be determined is the imact they have. The graph does not explain whether these impacts are positively or negatively correlated with satisfaction. However, the coefficients from the logistic regression model can be used to help determine the relationship between the feature and the satsifaction of a customer. 
+
+Top 3 features from XGBoost and their corresponding logistic regression coefficients:
+* Online boarding: 0.82
+* Personal travel: -2.71
+* Inflight wifi: 0.52
+
+Based on the logistic regression results, online boarding and inflight WiFi are positively correlated with satisfaction, while personal travel is negatively correlated.
+
+![Top-Feature-Online-Boarding](./Photos/Online-boarding.png)
+
+The feature that had the highest impact by far on customer satisfaction was online boarding.  Passengers ranked their satisfaction of online boarding from 0-5 with 5 being the most satisfied. On the graph, customers who were satisfied with their overall experience are shown in green.  The graph shows that as the customers ranked online boarding higher they were more likely to be satisfied overall. 
+
+![Top-Feature-Type-of-travel](./Photos/type-of-travel.png)
+
+Personal travel was the second most important indicator of overall satisfaction. The graph shows that personal travel is highly correlated with overall dissatisfaction.  
+
+![Top-Feature-WiFi](./Photos/WiFi-Service.png)
+
+The third highest indicator of overall satisfaction was inflight WiFi service. Higher ratings of wifi service satisfaction tended to result in higher levels of overall satisfaction. 
+
