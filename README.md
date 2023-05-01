@@ -98,12 +98,15 @@ The approach to this problem is to create a model that minimizes False Positives
 
 Lets start with simple logistic regression classifier.
 
-__Results:__
-* precision score: 0.8705887794274085
-* recall score: 0.8361132704053303
-* accuracy score: 0.8751251154912226
-* f1 score: 0.8530028209863255
+__Test Results:__
+* precision score: 0.87
+* recall score: 0.87
+* f1 score: 0.87
 
 ![Confusion matrix](./Photos/model_1_confusion_matrix.png)
 
 The initial model returned a precision score of 87%. It is important that the dissatisfied customers are labeled correctly. The top two boxes on the table show all of the dissatisfied customers and are split based on whether the model predicted them correctly or not. The initial model correctly labeled 13,139 dissatisfied customers and mislabeled 1,434. 
+
+### Final Model: XGBoost
+
+
