@@ -5,11 +5,11 @@ Machine learning project predicting customer satisfaction in the aviation indust
 
 ## Business Problem 
 
-Airline companies strive to provide excellent customer service. Understanding which factors to focus investments on can increase customer retention, enhance customer experience, increase revenue, reduce costs, and improve brand image. I'm asked to predict which factors are most important for passenger satisfaction and provide actionable insights for airlines to improve their overall customer experience.  
+Airline companies strive to provide excellent customer service. Understanding which factors to focus investments on can increase customer retention, enhance customer experience, increase revenue, reduce costs, and improve brand image. I'm asked to predict which factors are most important for passenger satisfaction and to provide actionable insights for airlines to improve their overall customer experience.  
 
 ## Overview 
 
-This classification project looks into which factors contribute most in predicting airline customer satisfaction. By using machine learning modeling to analyze customer data, I was able to predict which factors were most important for passenger satisfaction and provide actionable insights for airlines to improve their overall customer experience. My results showed that online boarding, personal vs business travel, inflight wifi service had the most impact on overall satisfaction. 
+This classification project looks into which factors contribute most in predicting airline customer satisfaction. By using machine learning modeling to analyze customer data, I was able to predict which factors were most important for passenger satisfaction and provide actionable insights for airlines to improve their overall customer experience. My results showed that online boarding, personal vs business travel, and inflight wifi service had the most impact on overall satisfaction. 
 
 ## Data Understanding
 
@@ -90,6 +90,9 @@ We can see that there were more loyal customers than disloyal customers, more bu
 We can see from the graph above that there are fairly equal amounts of satisfied and neutral/dissatisfied customers. 
 
 ## Modeling
+The goal of the machine learning modeling is to identify the factors that are most important for predicting passenger satisfaction and to develop a model that can accurately classify passengers as either satisfied or dissatisfied.
+
+The approach to this problem is to create a model that minimizes False Positives so that it does not predict many passengers are satisfied when they are not.  The model will be evaluated using a precision score. This explains out of all the satisfied predictions how many are correctly labeled. 
 
 ### Model 1: Logistic Regression 
 
@@ -103,4 +106,4 @@ __Results:__
 
 ![Confusion matrix](./Photos/model_1_confusion_matrix.png)
 
-
+The initial model returned a precision score of 87%. It is important that the dissatisfied customers are labeled correctly. The top two boxes on the table show all of the dissatisfied customers and are split based on whether the model predicted them correctly or not. The initial model correctly labeled 13,139 dissatisfied customers and mislabeled 1,434. 
