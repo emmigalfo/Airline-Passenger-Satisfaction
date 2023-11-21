@@ -180,8 +180,7 @@ emmi.galfo@gmail.com
 ***
 
 ## Repository structure: 
-├── AirlineDataSet : data used in project \
 ├── Images : images used in readme, presentation, and notebook \
-├── Airline_Passenger_Satisfaction.ipynb : jupyter notebook used to create project \
+├── EDA-modeling-notebook.ipynb : jupyter notebook used to create project \
 ├── README.md : project summary and conclusions \
 ├── presentation.pdf : stakeholder powerpoint slides 
