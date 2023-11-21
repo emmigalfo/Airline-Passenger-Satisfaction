@@ -1,6 +1,6 @@
 # Airline Passenger Satisfaction
 Machine learning project predicting customer satisfaction in the airline industry
-![Happy passengers on a plane](./Photos/Happy-passengers.avif)
+![Happy passengers on a plane](./Images/Happy-passengers.avif)
 **Author:** [Emmi Galfo](mailto:emmi.galfo@gmail.com)
 
 ## Business Problem 
@@ -70,7 +70,7 @@ Satisfaction: Airline satisfaction level(Satisfaction, neutral or dissatisfactio
 
 #### Numerical Columns- Training data
 
-![Heatmap of correlations](./Photos/Heatmap.png)
+![Heatmap of correlations](./Images/Heatmap.png)
 
 Top correlations as seen in the heat map:
 * Departure delay and arrival delay are the most strongly correlated.
@@ -79,13 +79,13 @@ Top correlations as seen in the heat map:
 
 #### Categorical Columns- Training data
 
-![Categorical bar graph](./Photos/categorical-bar.png)
+![Categorical bar graph](./Images/categorical-bar.png)
 
 We can see that there were more loyal customers than disloyal customers, more business travelers than personal travelers, and more business and eco seats than eco plus seats.
 
 #### Target- Training data
 
-![target bar graph](./Photos/Target-bar.png)
+![target bar graph](./Images/Target-bar.png)
 
 We can see from the graph above that there are fairly equal amounts of satisfied and neutral/dissatisfied customers. 
 
@@ -103,7 +103,7 @@ __Test Results:__
 * recall score: 0.87
 * f1 score: 0.87
 
-![Confusion matrix](./Photos/model_1_confusion_matrix.png)
+![Confusion matrix](./Images/model_1_confusion_matrix.png)
 
 The initial model returned a precision score of 87%. It is important that the dissatisfied customers are labeled correctly. The top two boxes on the table show all of the dissatisfied customers and are split based on whether the model predicted them correctly or not. The initial model mislabeled 1,434 dissatisfied customers. 
 
@@ -115,13 +115,13 @@ __Test Results:__
 * recall score: 0.96
 * f1 score: 0.96
 
-![Confusion matrix](./Photos/Final_Model_confusion.png)
+![Confusion matrix](./Images/Final_Model_confusion.png)
 
 The final model had a precision score of 97%! This is much better than the initial score. The final model only mislabelled 306 dissatisfied customers. 
 
 The final model looks good, next steps include pulling out the important features and making recommendations. 
 
-![Important features bar chart](./Photos/feature-importance.png)
+![Important features bar chart](./Images/feature-importance.png)
 
 When looking at the top important features, all that can be determined is the imact they have. The graph does not explain whether these impacts are positively or negatively correlated with satisfaction. However, the coefficients from the logistic regression model can be used to help determine the relationship between the feature and the satsifaction of a customer. 
 
@@ -132,15 +132,15 @@ Top 3 features from XGBoost and their corresponding logistic regression coeffici
 
 Based on the logistic regression results, online boarding and inflight WiFi are positively correlated with satisfaction, while personal travel is negatively correlated.
 
-![Top-Feature-Online-Boarding](./Photos/Online-boarding.png)
+![Top-Feature-Online-Boarding](./Images/Online-boarding.png)
 
 The feature that had the highest impact by far on customer satisfaction was online boarding.  Passengers ranked their satisfaction of online boarding from 0-5 with 5 being the most satisfied. On the graph, customers who were satisfied with their overall experience are shown in green.  The graph shows that as the customers ranked online boarding higher they were more likely to be satisfied overall. 
 
-![Top-Feature-Type-of-travel](./Photos/type-of-travel.png)
+![Top-Feature-Type-of-travel](./Images/type-of-travel.png)
 
 Personal travel was the second most important indicator of overall satisfaction. The graph shows that personal travel is highly correlated with overall dissatisfaction.  
 
-![Top-Feature-WiFi](./Photos/WiFi-Service.png)
+![Top-Feature-WiFi](./Images/WiFi-Service.png)
 
 The third highest indicator of overall satisfaction was inflight WiFi service. Higher ratings of wifi service satisfaction tended to result in higher levels of overall satisfaction. 
 
@@ -181,7 +181,7 @@ emmi.galfo@gmail.com
 
 ## Repository structure: 
 ├── AirlineDataSet : data used in project \
-├── Photos : images used in readme, presentation, and notebook \
+├── Images : images used in readme, presentation, and notebook \
 ├── Airline_Passenger_Satisfaction.ipynb : jupyter notebook used to create project \
 ├── README.md : project summary and conclusions \
 ├── presentation.pdf : stakeholder powerpoint slides 
